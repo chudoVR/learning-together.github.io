@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание веб-сайтов (HTML, CSS)!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="all_site">
+        <header class="header">
+            <a class="img_logo" href="index.html"><img src="Images/logo.svg" alt="logotype"></a>
+            <nav class="header_menu">
+                <ul class="menu">
+                    <li><a class="menu_link" href="index.html">Главная</a></li>
+                    <li><a class="menu_link" href="students.html">Студенты</a></li>
+                    <li><a class="menu_link" href="aboutСourse.html">О курсе</a></li>
+                    <li><a class="menu_link menu_link_active" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Войти</button>
+        </header>
+        <div class="registration">
+            <div class="okno">
+                <form class="form" action="#">
+                    <h4 class="text_registration">Войти на сайт</h4>
+                    <input class="form_input" type="text" placeholder="Логин" required>
+                    <input class="form_input" type="password" placeholder="Пароль" required>
+                    <button class="form_btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+        <main class="content_contacts">
+            <h1 class="heading text_content_contacts">Как нас найти &#128506;&#65039;</h1>
+            <iframe class="location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255805.16751875024!2d30.07895041960359!3d59.9408057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110ebe9ea5b%3A0x86b0025c5a84a071!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDAw!5e0!3m2!1sru!2sru!4v1676899055506!5m2!1sru!2sru"
+                width="1268" height="370" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="title title_contacts">Наши контакты</h4>
+            <p class="text text_contacts indent">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+            <p class="text text_contacts">Тел: <a class="tel" href="tel:+7(812)555-55-55">+7(812)555-55-55</a></p>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="text_footer">2023 &copy; <a class="footer_link" href="#">учебный центр</a></p>
+    </footer>
+    <script>
+        const loginButton = document.querySelector('.btn');
+        const registrationEL = document.querySelector('.registration');
+        loginButton.addEventListener('click', function (e) {
+            registrationEL.classList.toggle('registration');
+        });
+    </script>
+</body>
+
+</html>
