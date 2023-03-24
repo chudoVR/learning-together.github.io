@@ -31,10 +31,6 @@ body {
     margin-left: 54px;
 }
 
-.menu a:hover {
-    background-color: #ffffff74;
-}
-
 .menu_link {
     display: block;
     font-style: normal;
@@ -44,6 +40,10 @@ body {
     text-decoration-line: underline;
     color: #FFFFFF;
     padding: 28px 18px;
+}
+
+.menu_link:hover {
+    background-color: #ffffff74;
 }
 
 .menu_link_active {
@@ -69,7 +69,20 @@ body {
     cursor: pointer;
 }
 
+.btn:hover {
+    border: 1px solid rgb(198, 198, 198);
+    background-color: #ea5d21a6 linear-gradient(#ea5d21a6, #ea5d21a6);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    color: #213B7E;
+}
+
 /* Registration - Pегистрация */
+
 .registration {
     display: none;
     position: relative;
@@ -117,21 +130,11 @@ body {
 }
 
 .form_btn {
-    width: 153px;
-    height: 50px;
-    background-color: #EA5D21;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    text-decoration: none;
-    border: none;
     margin-bottom: 56px;
-    cursor: pointer;
+}
+
+.form_btn:hover {
+    color: #FFFFFF;
 }
 
 /* Content - Главная страница */
