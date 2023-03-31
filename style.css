@@ -39,7 +39,7 @@ body {
     line-height: 23px;
     text-decoration-line: underline;
     color: #FFFFFF;
-    padding: 28px 18px;
+    padding: 30px 18px;
 }
 
 .menu_link:hover {
@@ -211,16 +211,19 @@ body {
     margin-top: 29px;
 }
 
-.laquo {
+.laquo::before {
+    content: '“';
     font-size: 64px;
     margin-right: 5px;
     margin-top: 10px;
 }
 
-.raquo {
+.raquo::after {
+    content: '”';
     font-size: 64px;
     margin-top: 55px;
     margin-left: -3px;
+    display: flex;
 }
 
 /* Footer */
@@ -268,6 +271,7 @@ body {
 
 .info_content_students {
     width: 200px;
+    position: relative;
 }
 
 .text_photo {
@@ -277,13 +281,12 @@ body {
     margin-top: 8px;
 }
 
-.beginner {
-    position: relative;
-}
 
-.text_beginner {
+.beginner::after {
+    content: 'новичoк';
+    text-transform: uppercase;
     position: absolute;
-    top: -12px;
+    top: -10px;
     left: 119px;
     width: 94px;
     color: #FFFFFF;
@@ -396,6 +399,10 @@ body {
         padding-right: 25px;
     }
 
+    .img_logo {
+        padding: 15px 0;
+    }
+
     .menu {
         margin-left: 0px;
     }
@@ -434,12 +441,12 @@ body {
         line-height: 40px;
     }
 
-    .laquo {
+    .laquo::before {
         margin-top: 5px;
         font-size: 54px;
     }
 
-    .raquo {
+    .raquo::after {
         font-size: 54px;
         margin-top: 50px;
     }
@@ -485,28 +492,28 @@ body {
     .okno {
         padding-left: calc(50% - 425px / 2);
         padding-right: calc(50% - 425px / 2);
-        width: 425px;
+        width: 430px;
         margin-top: 40px;
     }
 
     .form_input {
         width: 350px;
-        height: 35px;
+        height: 45px;
         font-size: 16px;
         line-height: 20px;
         padding-left: 10px;
         margin-bottom: 29px;
     }
 
-    .form_btn {
-        width: 125px;
-        height: 40px;
-        margin-bottom: 20px;
-    }
 
     .header {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+
+    .img_logo {
+        padding: 10px 0;
     }
 
     .menu {
@@ -515,12 +522,19 @@ body {
 
     .menu_link {
         font-size: 15px;
-        padding: 10px 10px;
+        padding: 25px 10px;
     }
 
     .btn {
         width: 100px;
         height: 47px;
+    }
+
+
+    .form_btn {
+        width: 135px;
+        height: 40px;
+        margin-bottom: 40px;
     }
 
     .content {
@@ -559,12 +573,12 @@ body {
         line-height: 36px;
     }
 
-    .laquo {
+    .laquo::before {
         margin-top: 3px;
         font-size: 50px;
     }
 
-    .raquo {
+    .raquo::after {
         font-size: 50px;
         margin-top: 45px;
     }
@@ -643,49 +657,79 @@ body {
         margin-bottom: 29px;
     }
 
-    .form_btn {
-        width: 100px;
-        height: 30px;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin-bottom: 20px;
-    }
-
     .header {
-        display: grid;
-        justify-items: center;
-        justify-content: space-evenly;
+        padding-left: 24px;
+        padding-right: 24px;
+        position: relative;
+        justify-content: space-between;
     }
 
     .img_logo {
-        grid-column-start: 2;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding: 15px 0;
     }
 
-    .header_menu {
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    .burger_line {
+        width: 40px;
+        background-color: #FFFFFF;
+        height: 5px;
+    }
+
+    .burger.active .burger_line:nth-of-type(1) {
+        display: none;
+    }
+
+    .burger.active .burger_line:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+
+    .burger.active .burger_line:nth-of-type(3) {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
     }
 
     .menu {
         margin-left: 0px;
         flex-direction: column;
         align-items: center;
+        gap: 8px;
+        background-color: #213b7ee6;
+        padding: 32px;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
     }
 
-    .menu_link {
-        font-size: 12px;
-        line-height: 14px;
-        padding: 5px 5px;
+    .menu.active {
+        transform: translateX(0);
     }
 
     .btn {
         width: 100px;
+        height: 47px;
+    }
+
+    .form_btn {
+        width: 100px;
         height: 30px;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin-bottom: 7px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .content {
@@ -726,12 +770,12 @@ body {
         line-height: 36px;
     }
 
-    .laquo {
+    .laquo::before {
         margin-top: 3px;
         font-size: 50px;
     }
 
-    .raquo {
+    .raquo::after {
         font-size: 50px;
         margin-top: 45px;
     }
