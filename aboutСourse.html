@@ -18,6 +18,11 @@
         <header class="header">
             <a class="img_logo" href="index.html"><img src="Images/logo.svg" alt="logotype"></a>
             <nav class="header_menu">
+                <div class="burger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
                 <ul class="menu">
                     <li><a class="menu_link" href="index.html">Главная</a></li>
                     <li><a class="menu_link" href="students.html">Студенты</a></li>
@@ -51,6 +56,13 @@
         const registrationEL = document.querySelector('.registration');
         loginButton.addEventListener('click', function (e) {
             registrationEL.classList.toggle('registration');
+        });
+
+        const burgerEl = document.querySelector('.burger');
+        const menuEl = document.querySelector('.menu');
+        burgerEl.addEventListener('click', function () {
+            burgerEl.classList.toggle('active');
+            menuEl.classList.toggle('active');
         });
     </script>
 </body>
