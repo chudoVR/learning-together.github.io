@@ -757,16 +757,16 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 530px) {
-     .logo {
-        width: 20px;
-        height: 20px;
+ .logo {
+        width: 30px;
+        height: 30px;
     }
 
     .logo_show {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
-    
+
     .okno {
         padding-left: calc(50% - 250px / 2);
         padding-right: calc(50% - 250px / 2);
@@ -795,10 +795,6 @@ body {
         padding-right: 24px;
         position: relative;
         justify-content: space-between;
-    }
-
-    .img_logo {
-        padding: 15px 0;
     }
 
     .burger {
@@ -835,9 +831,9 @@ body {
         flex-direction: column;
         gap: 20px;
         background-color: #213b7ee6;
-        padding: 20px;
+        padding: 15px;
         position: absolute;
-        top: 80px;
+        top: 75px;
         left: 0px;
         z-index: 1000;
         width: 100%;
@@ -863,6 +859,7 @@ body {
     .btn {
         width: 100px;
         height: 47px;
+        margin: 15px 0;
     }
 
     .form_btn {
