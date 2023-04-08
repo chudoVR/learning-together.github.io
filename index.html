@@ -10,7 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Создание веб-сайтов (HTML, CSS)!</title>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -84,20 +86,7 @@
     <footer class="footer">
         <p class="text_footer">2023 &copy; <a class="footer_link" href="#">учебный центр</a></p>
     </footer>
-    <script>
-        const loginButton = document.querySelector('.btn');
-        const registrationEL = document.querySelector('.registration');
-        loginButton.addEventListener('click', function (e) {
-            registrationEL.classList.toggle('registration');
-        });
-
-        const burgerEl = document.querySelector('.burger');
-        const menuEl = document.querySelector('.menu');
-        burgerEl.addEventListener('click', function () {
-            burgerEl.classList.toggle('active');
-            menuEl.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
