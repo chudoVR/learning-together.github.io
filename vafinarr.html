@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание веб-сайтов (HTML, CSS)!</title>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="all_site">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <span class="logo_show"></span>
+                <span class="logo_show"></span>
+                <span class="logo_show"></span>
+                <span class="logo_show"></span></a>
+            <nav class="header_menu">
+                <div class="burger">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+                <ul class="menu">
+                    <li><a class="menu_link" href="index.html">Главная</a></li>
+                    <li><a class="menu_link" href="students.html">Студенты</a></li>
+                    <li><a class="menu_link" href="aboutСourse.html">О курсе</a></li>
+                    <li><a class="menu_link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Войти</button>
+        </header>
+        <div class="registration">
+            <div class="okno">
+                <form class="form" action="#">
+                    <h4 class="text_registration">Войти на сайт</h4>
+                    <input class="form_input" type="text" placeholder="Логин" required>
+                    <input class="form_input" type="password" placeholder="Пароль" required>
+                    <button class="btn form_btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+        <main class="content">
+            <nav>
+                <ul class="crumbs">
+                    <li>
+                        <a href="students.html">Студенты</a>
+                    </li>
+                    <li>
+                        <span>Вафина Равиля Рашатовна</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content_info">
+                <img class="img_itsMe" src="Images/itsMe.jpg" alt="студент Равиля Вафина">
+                <div class="data">
+                    <h1 class="heading_Name">Вафина Равиля Рашатовна</h1>
+                    <div class="details">
+                        <h4 class="title_details">Дата рождения:</h4>
+                        <p class="text">01.06.1989</p>
+                        <h4 class="title_details">Адрес проживания:</h4>
+                        <p class="text">Республика Татарстан, г. Нижнекамск</p>
+                        <h4 class="title_details">Телефон:</h4>
+                        <a class="text text_details" href="tel:+79040000000">+7904-xxx-xx-xx</a>
+                        <h4 class="title_details">e-mail:</h4>
+                        <a class="text text_details" href="mailto:ravik.08@mail.ru">ravik.08@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_education">
+                <p class="text text_education">Образование (высшее):</p>
+                <p class="text text_university_kai"> Казанский Государственный Технический Университет им. А.Н.
+                    Туполева, инженер по специальности «Вычислительные машины, комплексы, системы и сети», 2011г.;</p>
+                <p class="text text_university_mgei">
+                    Московский Гуманитарно – Экономический Институт, бакалавр по направлению «Экономика», 2014г.</p>
+            </div>
+            <h3 class="caption">В настоящее время прохожу обучение по курсу «Мой первый сайт. Основы
+                веб-верстки».</h3>
+            <details>
+                <summary>Списки</summary>
+                <p class="text text_all">Списком называется взаимосвязанный набор отдельных фраз или предложений,
+                    которые начинаются с маркера или цифры. Списки предоставляют возможность упорядочить и
+                    систематизировать разные данные и представить их в наглядном и удобном для пользователя виде. Любой
+                    список представляет собой контейнер &lt;ul&gt;, который устанавливает маркированный список, или
+                    &lt;ol&gt;, определяющий список нумерованный.
+                </p>
+                <p class="text text_all">Вложенные или многоуровневые списки предназначены для организации сложной
+                    иерархической структуры текста.
+                </p>
+                <p class="text example">Пример:</p>
+                <ul class="text example_list">
+                    <li class="list_li">Каталог
+                        <ul>
+                            <li class="items_li">Очищение
+                                <ul>
+                                    <li class="li_details">Гидрофильные масла и щербеты</li>
+                                    <li class="li_details">Пенки для умывания</li>
+                                    <li class="li_details">Скрабы</li>
+                                </ul>
+                            </li>
+                            <li class="items_li">Маски
+                                <ul>
+                                    <li class="li_details">Тканевые</li>
+                                    <li class="li_details">Ночные</li>
+                                    <li class="li_details">Альгинатные</li>
+                                </ul>
+                            </li>
+                            <li class="items_li">Декоративная косметика
+                                <ul>
+                                    <li class="li_details">Для лица</li>
+                                    <li class="li_details">Для глаз</li>
+                                    <li class="li_details">Для губ</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_li">Для детей
+                        <ul>
+                            <li class="items_li">Косметика</li>
+                            <li class="items_li">Аксессуары</li>
+                        </ul>
+                    </li>
+                    <li class="list_li">Акции</li>
+                    <li class="list_sale">SALE</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Ввод и отправка данных: формы и кнопки</summary>
+                <p class="text text_all">Сама форма обычно предназначена для получения от пользователя информации для
+                    дальнейшей
+                    пересылки её на сервер, где данные формы принимает программа-обработчик. Такая программа может быть
+                    написана на любом серверном языке программирования вроде PHP, Perl и др.
+                </p>
+                <p class="text text_all">Элемент HTML &lt;form&gt; определяет форму, которая используется для сбора
+                    данных
+                    пользователя. Все его атрибуты предназначены для того, чтобы была возможность настроить запрос на
+                    отправку,
+                    когда пользователь нажимает кнопку отправки. Двумя наиболее важными атрибутами являются
+                    <ins>action</ins> и <ins>method</ins>.
+                </p>
+                <p class="text example">Пример: Label, Checkbox, Radio</p>
+                <div class="text example_form">
+                    <form action="#">
+                        <fieldset>
+                            <legend>Форма ввода</legend>
+                            <p class="text text_form">HTML-элемент &lt;label&gt; представляет собой подпись к элементу
+                                пользовательского интерфейса.</p>
+                            <p class="text text_form">&lt;input&gt; элементы типа <ins>checkbox</ins> отображаются по
+                                умолчанию в виде флажков, которые отмечаются при активации.</p>
+                            <p class="text text_form">&lt;input&gt; элементы типа <ins>radio</ins> обычно используются в
+                                группах переключателей — наборах переключателей, описывающих набор связанных параметров.
+                            </p>
+                            <table class="example_form_table">
+                                <tr>
+                                    <td><input type="checkbox" name="sogl" id="sogl"></td>
+                                    <td><label for="sogl">Cогласен (на) с утверждением</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="allRead" id="all" checked></td>
+                                    <td><label for="all">Все прочитал (а)</label></td>
+                                </tr>
+                            </table>
+                            <ol class="example_ol">
+                                <li>
+                                    <div class="example_inputForm">
+                                        <h5 class="text">Язык гипертекстовой разметки текста, это: </h5>
+                                        <div class="opt">
+                                            <input type="radio" name="rukovodctvo" id="html" required><label
+                                                for="html">HTML</label>
+                                            <input type="radio" name="rukovodctvo" id="css" required><label
+                                                for="css">CSS</label>
+                                            <input type="radio" name="rukovodctvo" id="js" required><label
+                                                for="js">JS</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="example_inputForm">
+                                        <h5 class="text">Каскадные таблицы стилей, это: </h5>
+                                        <div class="opt">
+                                            <label for="otvet">Выберете правильный ответ:</label>
+                                            <select name="otvet" id="otvet">
+                                                <option value="HTML">HTML</option>
+                                                <option value="CSS">CSS</option>
+                                                <option value="JS">JS</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="example_inputForm">
+                                        <h5 class="text">Пожалуйста оцените выполненную работу</h5>
+                                        <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+                                        <p class="text">Ваша оценка: <span id="rating"></span></p>
+                                    </div>
+                                </li>
+                            </ol>
+                            <div class="example_fprm_button">
+                                <button class="example_button" type="submit">Отправить</button>
+                                <button class="example_button delete" type="reset">Удалить</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </details>
+            <details>
+                <summary>Форматы изображений</summary>
+                <p class="text text_all">Тег &lt;img&gt; (от англ. image — изображение) предназначен для отображения
+                    на веб-странице изображений в
+                    графическом формате GIF, JPEG, SVG, PNG и тд. Адрес файла с картинкой задаётся через атрибут src.
+                    Атрибут alt нужен для установки подписи (альтернативного названия) изображения на сайте.
+                </p>
+                <div class="block_picture">
+                    <div class="block_pic">
+                        <figure class="figure">
+                            <img class="picture" src="images/img_jpg.jpg" alt="Картина с расширением JPG">
+                            <figcaption class="text text_picture">JPG</figcaption>
+                        </figure>
+                        <p class="text text_all">JPEG (Joint Photographic Experts Group) по названию — один из
+                            популярных
+                            растровых
+                            графических форматов, применяемый для хранения
+                            фотографий и подобных им изображений. Файлы, содержащие данные JPEG, обычно имеют расширения
+                            (суффиксы)
+                            .jpg</p>
+                    </div>
+                    <div class="block_pic png_svg">
+                        <p class="text text_all">PNG (Portable Network Graphics) — растровый формат хранения
+                            графической информации,
+                            использующий сжатие без потерь по алгоритму Deflate.</p>
+                        <figure class="figure">
+                            <img class="picture" src="images/img_png.png" alt="Картина с расширением PNG">
+                            <figcaption class="text text_picture">PNG</figcaption>
+                        </figure>
+                    </div>
+                    <div class="block_pic">
+                        <figure class="figure">
+                            <img class="picture" src="images/img_gif.gif" alt="Картина с расширением GIF">
+                            <figcaption class="text text_picture">GIF</figcaption>
+                        </figure>
+                        <p class="text text_all">GIF (Graphics Interchange Format) — растровый формат графических
+                            изображений. Способен
+                            хранить сжатые данные без потери качества в формате не более
+                            256 цветов. В 1989-м формат был модифицирован (GIF89a): были добавлены поддержка
+                            прозрачности и
+                            анимации.</p>
+                    </div>
+                    <div class="block_pic png_svg">
+                        <p class="text text_all">SVG (Scalable Vector Graphics) — язык разметки масштабируемой
+                            векторной графики,
+                            созданный Консорциумом Всемирной паутины (W3C) и входящий в
+                            подмножество расширяемого языка разметки XML, предназначен для описания двумерной векторной
+                            и смешанной
+                            векторно/растровой графики в формате XML. Поддерживает как неподвижную, так и анимированную
+                            интерактивную графику — или, в иных терминах, декларативную и скриптовую.</p>
+                        <figure class="figure">
+                            <img class="picture" src="images/img_svg.svg" alt="Картина с расширением SVG">
+                            <figcaption class="text text_picture">SVG</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </details>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="text_footer">2023 &copy; <a class="footer_link" href="#">учебный центр</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
